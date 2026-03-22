@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,132 +6,77 @@
 <title>Shri Krishna Mill Store</title>
 
 <style>
-body{margin:0;font-family:Arial;background:#f4f6fb}
+body{margin:0;font-family:Arial;background:#f5f7fb}
 
-/* HEADER TOP */
+/* TOPBAR */
 .topbar{
-background:#0b2c6b;
-color:white;
-padding:8px 20px;
-display:flex;
-justify-content:space-between;
-font-size:14px;
+background:#0b2c6b;color:white;
+display:flex;justify-content:space-between;
+padding:8px 20px;font-size:14px;
 }
 
 /* NAVBAR */
 header{
-background:#123c8c;
-color:white;
-display:flex;
-justify-content:space-between;
-align-items:center;
+background:#123c8c;color:white;
+display:flex;justify-content:space-between;
 padding:15px 30px;
+align-items:center;
 }
-header h2{margin:0;}
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
-}
+nav a{color:white;margin:10px;text-decoration:none;font-weight:bold}
 
 /* HERO */
 .hero{
+height:500px;
 background:url('https://images.unsplash.com/photo-1605902711622-cfb43c44367f') center/cover;
-height:400px;
-display:flex;
-align-items:center;
-padding:40px;
-color:white;
+display:flex;align-items:center;
+color:white;padding:40px;
 }
-.hero-text{
+.hero-box{
 background:rgba(0,0,0,0.6);
-padding:30px;
-border-radius:10px;
-}
-.hero button{
-background:orange;
-border:none;
-padding:12px 25px;
-color:white;
-font-size:16px;
-border-radius:5px;
+padding:30px;border-radius:10px;
 }
 
 /* SECTION */
-.section{padding:50px 20px;text-align:center;}
+.section{padding:60px 20px;text-align:center}
 .section h2{color:#123c8c}
 
 /* PRODUCTS */
 .products{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
+display:flex;flex-wrap:wrap;
+gap:20px;justify-content:center;
 }
 .card{
-width:260px;
-background:white;
+width:260px;background:white;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
 overflow:hidden;
 }
-.card img{width:100%;height:180px;object-fit:cover;}
-.card h3{padding:10px;color:#123c8c}
+.card img{width:100%;height:180px;object-fit:cover}
+
+/* DETAILS */
+.details{
+max-width:900px;margin:auto;
+font-size:16px;line-height:1.7;
+}
 
 /* FEATURES */
 .features{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
+display:flex;flex-wrap:wrap;gap:20px;justify-content:center;
 }
 .feature{
-width:220px;
-padding:20px;
-background:#eaf0ff;
-border-radius:10px;
-}
-
-/* BRANDS */
-.brands{
-display:flex;
-justify-content:center;
-gap:40px;
-font-size:22px;
-font-weight:bold;
-}
-
-/* CONTACT */
-.contact{
-background:linear-gradient(90deg,#123c8c,#6a11cb);
-color:white;
-}
-input,textarea{
-width:90%;
-padding:10px;
-margin:10px;
-border:none;
-border-radius:5px;
+width:250px;background:#eaf0ff;padding:20px;border-radius:10px;
 }
 
 /* FOOTER */
 footer{
-background:#0b2c6b;
-color:white;
-text-align:center;
-padding:20px;
+background:#0b2c6b;color:white;text-align:center;padding:30px;
 }
 
 /* WHATSAPP */
 .whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:white;
+padding:15px;border-radius:50%;
 }
 </style>
 </head>
@@ -148,33 +92,33 @@ border-radius:50%;
 <h2>SHRI KRISHNA MILL STORE</h2>
 <nav>
 <a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Products</a>
-<a href="#">Contact</a>
+<a href="#products">Products</a>
+<a href="#details">Details</a>
+<a href="#contact">Contact</a>
 </nav>
 </header>
 
 <!-- HERO -->
 <div class="hero">
-<div class="hero-text">
-<h1>Your Trusted Bearing Supplier</h1>
-<p>High Quality Products & Reliable Service</p>
-<button>Contact Us</button>
+<div class="hero-box">
+<h1>Premium Bearing Supplier</h1>
+<p>Trusted Industrial Solutions in Kolkata</p>
 </div>
 </div>
 
 <!-- ABOUT -->
 <div class="section">
-<h2>About Us</h2>
-<p>
-Shri Krishna Mill Store is a leading supplier of high-quality bearings and industrial products in Kolkata.
-We provide durable and precision solutions for industries.
+<h2>About Company</h2>
+<p class="details">
+Shri Krishna Mill Store is a trusted supplier of high-quality bearings and industrial goods.
+We provide durable, high-performance products suitable for heavy machinery, automotive,
+and manufacturing industries.
 </p>
 </div>
 
 <!-- PRODUCTS -->
-<div class="section">
-<h2>Our Products</h2>
+<div class="section" id="products">
+<h2>Our Bearing Categories</h2>
 <div class="products">
 
 <div class="card">
@@ -200,42 +144,41 @@ We provide durable and precision solutions for industries.
 </div>
 </div>
 
+<!-- DETAILS -->
+<div class="section" id="details">
+<h2>Product Details</h2>
+
+<div class="details">
+<p><b>Ball Bearings:</b> Used in high-speed applications, low friction, high precision.</p>
+<p><b>Roller Bearings:</b> Heavy load support, ideal for industrial machinery.</p>
+<p><b>Needle Bearings:</b> Compact design with high load capacity.</p>
+<p><b>Industrial Bearings:</b> Suitable for large-scale industrial use.</p>
+
+<p>
+We deal in top brands like SKF, FAG, NSK, NTN and ensure original quality products.
+Our bearings are tested for durability, performance, and long life.
+</p>
+</div>
+
+</div>
+
 <!-- FEATURES -->
 <div class="section">
 <h2>Why Choose Us</h2>
 <div class="features">
-<div class="feature">High Quality Products</div>
-<div class="feature">Competitive Pricing</div>
-<div class="feature">Reliable Service</div>
-<div class="feature">Fast Delivery</div>
-</div>
-</div>
-
-<!-- BRANDS -->
-<div class="section">
-<h2>Brands</h2>
-<div class="brands">
-<div>SKF</div>
-<div>FAG</div>
-<div>NSK</div>
-<div>NTN</div>
+<div class="feature">✔ High Quality Products</div>
+<div class="feature">✔ Competitive Pricing</div>
+<div class="feature">✔ Trusted Supplier</div>
+<div class="feature">✔ Fast Delivery</div>
 </div>
 </div>
 
 <!-- CONTACT -->
-<div class="section contact">
+<div class="section" id="contact">
 <h2>Contact Us</h2>
 <p>📍 Jheelbagan, Hatiara, Kolkata - 700157</p>
 <p>📞 7439724869 / 7439150801</p>
 <p>📧 jaiswalaaditya45@gmail.com</p>
-
-<input placeholder="Your Name">
-<input placeholder="Your Email">
-<textarea placeholder="Message"></textarea>
-<br>
-<button style="padding:10px 25px;background:orange;color:white;border:none;border-radius:5px;">
-Send Message
-</button>
 </div>
 
 <footer>
