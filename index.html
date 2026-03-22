@@ -1,191 +1,200 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shri Krishna Mill Store</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHRI KRISHNA MILL STORE</title>  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+    }
 
-<style>
-body{margin:0;font-family:Arial;background:#f5f7fb}
+    header {
+      background: #0a3d62;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-/* TOPBAR */
-.topbar{
-background:#0b2c6b;color:white;
-display:flex;justify-content:space-between;
-padding:8px 20px;font-size:14px;
-}
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
 
-/* NAVBAR */
-header{
-background:#123c8c;color:white;
-display:flex;justify-content:space-between;
-padding:15px 30px;
-align-items:center;
-}
-nav a{color:white;margin:10px;text-decoration:none;font-weight:bold}
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-/* HERO */
-.hero{
-height:500px;
-background:url('https://images.unsplash.com/photo-1605902711622-cfb43c44367f') center/cover;
-display:flex;align-items:center;
-color:white;padding:40px;
-}
-.hero-box{
-background:rgba(0,0,0,0.6);
-padding:30px;border-radius:10px;
-}
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1581091215367-59ab6b0a5b6a') center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
 
-/* SECTION */
-.section{padding:60px 20px;text-align:center}
-.section h2{color:#123c8c}
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
 
-/* PRODUCTS */
-.products{
-display:flex;flex-wrap:wrap;
-gap:20px;justify-content:center;
-}
-.card{
-width:260px;background:white;
-border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,0.2);
-overflow:hidden;
-}
-.card img{width:100%;height:180px;object-fit:cover}
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-/* DETAILS */
-.details{
-max-width:900px;margin:auto;
-font-size:16px;line-height:1.7;
-}
+    .section h2 {
+      margin-bottom: 20px;
+      color: #0a3d62;
+    }
 
-/* FEATURES */
-.features{
-display:flex;flex-wrap:wrap;gap:20px;justify-content:center;
-}
-.feature{
-width:250px;background:#eaf0ff;padding:20px;border-radius:10px;
-}
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
 
-/* FOOTER */
-footer{
-background:#0b2c6b;color:white;text-align:center;padding:30px;
-}
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
 
-/* WHATSAPP */
-.whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25D366;color:white;
-padding:15px;border-radius:50%;
-}
-</style>
-</head>
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
 
-<body>
+    .features {
+      background: #0a3d62;
+      color: white;
+    }
 
-<div class="topbar">
-<div>📞 7439724869 / 7439150801</div>
-<div>📧 jaiswalaaditya45@gmail.com</div>
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      margin: 10px 0;
+    }
+
+    .contact input, .contact textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .btn {
+      background: #0a3d62;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: green;
+      color: white;
+      padding: 12px 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style></head><body><header>
+  <h1>SHRI KRISHNA MILL STORE</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><section class="hero">
+  <h2>Dealing in Bearings & Industrial Goods</h2>
+  <p>High Quality | Trusted Supplier | Best Prices</p>
+</section><section id="about" class="section">
+  <h2>About Us</h2>
+  <p>
+    Shri Krishna Mill Store is a trusted supplier of bearings and industrial goods.
+    We provide high quality products for various industrial applications with reliability and durability.
+  </p>
+</section><section id="products" class="section">
+  <h2>Our Bearing Categories</h2>
+  <div class="products"><div class="card">
+  <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+  <h3>Ball Bearings</h3>
 </div>
-
-<header>
-<h2>SHRI KRISHNA MILL STORE</h2>
-<nav>
-<a href="#">Home</a>
-<a href="#products">Products</a>
-<a href="#details">Details</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-
-<!-- HERO -->
-<div class="hero">
-<div class="hero-box">
-<h1>Premium Bearing Supplier</h1>
-<p>Trusted Industrial Solutions in Kolkata</p>
-</div>
-</div>
-
-<!-- ABOUT -->
-<div class="section">
-<h2>About Company</h2>
-<p class="details">
-Shri Krishna Mill Store is a trusted supplier of high-quality bearings and industrial goods.
-We provide durable, high-performance products suitable for heavy machinery, automotive,
-and manufacturing industries.
-</p>
-</div>
-
-<!-- PRODUCTS -->
-<div class="section" id="products">
-<h2>Our Bearing Categories</h2>
-<div class="products">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
-<h3>Ball Bearings</h3>
+  <img src="https://images.unsplash.com/photo-1581090700227-1e8e8f3b6c2a">
+  <h3>Roller Bearings</h3>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1605902711622-cfb43c44367f">
-<h3>Roller Bearings</h3>
+  <img src="https://images.unsplash.com/photo-1581093588401-22f3f0c9b6c5">
+  <h3>Thrust Bearings</h3>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1581090700227-1e8b28f0b6c1">
-<h3>Needle Bearings</h3>
+  <img src="https://images.unsplash.com/photo-1581093448796-9d0b5c3a2b8a">
+  <h3>Needle Bearings</h3>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1581091215367-59ab6b2e1d2c">
-<h3>Industrial Bearings</h3>
+  <img src="https://images.unsplash.com/photo-1581091012184-5c3c0b2d3a1f">
+  <h3>Deep Groove Bearings</h3>
 </div>
 
-</div>
-</div>
-
-<!-- DETAILS -->
-<div class="section" id="details">
-<h2>Product Details</h2>
-
-<div class="details">
-<p><b>Ball Bearings:</b> Used in high-speed applications, low friction, high precision.</p>
-<p><b>Roller Bearings:</b> Heavy load support, ideal for industrial machinery.</p>
-<p><b>Needle Bearings:</b> Compact design with high load capacity.</p>
-<p><b>Industrial Bearings:</b> Suitable for large-scale industrial use.</p>
-
-<p>
-We deal in top brands like SKF, FAG, NSK, NTN and ensure original quality products.
-Our bearings are tested for durability, performance, and long life.
-</p>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1581091870622-1a2b3c4d5e6f">
+  <h3>Industrial Bearings</h3>
 </div>
 
-</div>
-
-<!-- FEATURES -->
-<div class="section">
-<h2>Why Choose Us</h2>
-<div class="features">
-<div class="feature">✔ High Quality Products</div>
-<div class="feature">✔ Competitive Pricing</div>
-<div class="feature">✔ Trusted Supplier</div>
-<div class="feature">✔ Fast Delivery</div>
-</div>
-</div>
-
-<!-- CONTACT -->
-<div class="section" id="contact">
-<h2>Contact Us</h2>
-<p>📍 Jheelbagan, Hatiara, Kolkata - 700157</p>
-<p>📞 7439724869 / 7439150801</p>
-<p>📧 jaiswalaaditya45@gmail.com</p>
-</div>
-
-<footer>
-© 2026 SHRI KRISHNA MILL STORE
-</footer>
-
-<a class="whatsapp" href="https://wa.me/917439724869">💬</a>
+  </div>
+</section><section class="section features">
+  <h2>Why Choose Us</h2>
+  <ul>
+    <li>✔ High Quality Bearings</li>
+    <li>✔ Wide Range of Products</li>
+    <li>✔ Competitive Pricing</li>
+    <li>✔ Trusted Supplier</li>
+  </ul>
+</section><section id="contact" class="section contact">
+  <h2>Contact Us</h2>
+  <p><strong>Address:</strong> JHEELBAGAN, HATIARA, KOLKATA - 700157</p>
+  <p><strong>Phone:</strong> 7439724869 / 7439150801</p>  <form>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea placeholder="Your Message"></textarea><br>
+    <button class="btn">Send Message</button>
+  </form>
+</section><footer>
+  <p>© 2026 SHRI KRISHNA MILL STORE | All Rights Reserved</p>
+</footer><a class="whatsapp" href="https://wa.me/917439724869" target="_blank">WhatsApp</a>
 
 </body>
 </html>
